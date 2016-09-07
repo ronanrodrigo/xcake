@@ -5,6 +5,10 @@ module Xcake
     require 'xcake/command/init'
     require 'xcake/command/make'
 
+    if ENV["ENABLE_RECREATE"]
+      require 'xcake/command/recreate'
+    end
+
     self.abstract_command = true
     self.command = 'xcake'
     self.version = VERSION

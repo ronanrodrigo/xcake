@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'cork'
   spec.add_dependency 'hooks', '~> 0.4.1'
   spec.add_dependency 'xcodeproj', '< 2.0.0', '>= 1.4.0'
-  spec.add_dependency 'deep_merge'
+  spec.add_dependency 'deep_merge', '~> 1.1.1'
 
   # Lock `activesupport` (transitive dependency via `xcodeproj`) to keep supporting system ruby
   spec.add_dependency 'activesupport', '< 5'
